@@ -1,0 +1,12 @@
+
+
+html {}
+
+#logo {
+    background: url(/static/static_local/custom_logo_idea.png) no-repeat bottom left;
+}
+
+body.master {
+    background-color: rgb(229, 225, 214);
+    background-image: url(/static/static_local/custom_background_img.png);
+}

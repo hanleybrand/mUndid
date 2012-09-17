@@ -1,0 +1,1 @@
+console.log('MDID: Local js code is working');

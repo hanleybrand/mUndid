@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business
+END
+Services.mxml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/Services.mxml
+END
+CacheManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/CacheManager.as
+END
+StatusManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/StatusManager.as
+END
+ParamsManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/ParamsManager.as
+END
+ButtonSyncManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/ButtonSyncManager.as
+END
+KeyboardManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/KeyboardManager.as
+END
+AuthorizationManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/AuthorizationManager.as
+END
+SlideshowManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/Common/src/org/mdid/mediaviewer/business/SlideshowManager.as
+END
