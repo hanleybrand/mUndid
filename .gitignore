@@ -27,7 +27,3 @@ solr/nohup_solr
 rooibos/static/soundmanager/swf/*
 *.sqlite
 *.log
-*.pyc
-*.pyc
-
-rooibos/settings_local.py
