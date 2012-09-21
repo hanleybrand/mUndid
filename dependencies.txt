@@ -29,7 +29,6 @@ Werkzeug==0.8.3
 #  git
 #  openjdk-6-jre-headless
 #  python-setuptools
-#
 #  solr
 #  memcached or couchbase  http://www.couchbase.com/download
 #
