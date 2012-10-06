@@ -1,12 +1,12 @@
 *.pyc
 *.pyo
+.idea/*
+mdid-data/*
+mdid-scratch/*
+solr3/logs/*
 rooibos/settings_local.py
 apps/
-scratch/
-.idea/*
 rooibos/*/migrations/
-solr/wrapper.*
-solr/wrapper-license.conf
 config.xml
 CACHE
 rooibos/static/flowplayer/flowplayer.commercial*
@@ -16,7 +16,6 @@ rooibos/static/cache/*
 dist/mac/
 django_virtualenv_localMacOS.wsgi
 gallery_backup/
-mdidData/
 rooibos/createUserAndDb.sql
 rooibos/mdid2.xml
 rooibos/mdid2migrateOut.txt
