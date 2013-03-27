@@ -4,10 +4,10 @@ from django.conf import settings as django_settings
 from django.template.loader import render_to_string
 from django.core.files.base import ContentFile
 
-from compressor.conf import settings
-from compressor import filters
-from compressor.exceptions import UncompressableFileError
-from compressor.utils import get_hexdigest, get_mtime, get_class
+from rooibos.contrib.compressor.conf import settings
+from rooibos.contrib.compressor import filters
+from rooibos.contrib.compressor.exceptions import UncompressableFileError
+from rooibos.contrib.compressor.utils import get_hexdigest, get_mtime, get_class
 
 class Compressor(object):
 

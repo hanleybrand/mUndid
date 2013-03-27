@@ -36,16 +36,30 @@ MEDIA_ROOT = ''
 MEDIA_URL = ''
 
 # List of callables that know how to import templates from various sources.
+
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.load_template_source',
-    'django.template.loaders.app_directories.load_template_source',
-#     'django.template.loaders.eggs.load_template_source',
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    "django.core.context_processors.auth",
+    "django.contrib.auth.context_processors.auth",
     "django.core.context_processors.debug",
-#    "django.core.context_processors.i18n",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.tz",
+    "django.contrib.messages.context_processors.messages",
+    "rooibos.context_processors.settings",
+    "rooibos.context_processors.selected_records",
+    "django.core.context_processors.",
+    )
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    "django.contrib.auth.context_processors.auth",
+    #"django.core.context_processors.auth",
+    "django.core.context_processors.debug",
+    #    "django.core.context_processors.i18n",
     "django.core.context_processors.media",
     "django.core.context_processors.request",
     "rooibos.context_processors.settings",
@@ -56,7 +70,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 MIDDLEWARE_CLASSES = (
     'rooibos.middleware.Middleware',
     'rooibos.help.middleware.PageHelp',
-#    'rooibos.profile_middleware.ProfileMiddleware',
+    #    'rooibos.profile_middleware.ProfileMiddleware',
     'rooibos.sslredirect.SSLRedirect',
     'rooibos.ui.middleware.PageTitles',
     'django.middleware.common.CommonMiddleware',
@@ -67,9 +81,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.middleware.doc.XViewMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'pagination.middleware.PaginationMiddleware',
-    'djangologging.middleware.LoggingMiddleware',
-    'djangologging.middleware.SuppressLoggingOnAjaxRequestsMiddleware',
+    'rooibos.contrib.pagination.middleware.PaginationMiddleware',
+    # 'rooibos.contrib.djangologging.middleware.LoggingMiddleware',
+    # 'rooibos.contrib.djangologging.middleware.SuppressLoggingOnAjaxRequestsMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.middleware.transaction.TransactionMiddleware',
     'rooibos.storage.middleware.StorageOnStart',
@@ -90,7 +104,7 @@ INSTALLED_APPS = (
     'django.contrib.comments',
     'django.contrib.redirects',
     'django_extensions',
-    'google_analytics',
+    'rooibos.contrib.google_analytics',
     'rooibos.data',
     'rooibos.migration',
     'rooibos.util',
@@ -117,10 +131,10 @@ INSTALLED_APPS = (
     'rooibos.pdfviewer',
     'rooibos.pptexport',
     'rooibos.audiotextsync',
-    'pagination',
-    'impersonate',
-    'compressor',
-    'south',
+    'rooibos.contrib.pagination',
+    'rooibos.contrib.impersonate',
+    'rooibos.contrib.compressor',
+    'rooibos.contrib.south',
 )
 
 STORAGE_SYSTEMS = {

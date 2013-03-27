@@ -33,7 +33,7 @@ class StatsMiddleware(object):
         ct = response.get('content-type', None)
         if not (ct and ct.startswith('text/html')):
             return response
-        
+
         totTime = time() - start
 
         # compute the db time for the queries just run
@@ -52,7 +52,7 @@ class StatsMiddleware(object):
             'pyTime': pyTime,
             'dbTime': dbTime,
             'queries': queries,
-            }
+        }
 
         # replace the comment if found
         if response and response.content:
